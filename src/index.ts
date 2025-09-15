@@ -4,6 +4,6 @@ import app from "./server";
 console.log(`🚀 Server berjalan di http://localhost:${env.PORT}`);
 
 export default {
-  port: env.PORT,
+  port: 8000,
   fetch: app.fetch,
 };
