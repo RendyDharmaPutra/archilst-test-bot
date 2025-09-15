@@ -12,3 +12,8 @@ bot.help(helpCommand);
 
 // Default handler untuk text
 bot.on("text", echoHandler);
+
+bot.telegram.setMyCommands([
+  { command: "start", description: "Mulai bot" },
+  { command: "help", description: "Bantuan" },
+]);
