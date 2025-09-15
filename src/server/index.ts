@@ -4,12 +4,12 @@ import { bot } from "../bot";
 const app = new Hono();
 
 // Health check
-app.get("/", (c) =>
-  c.json({
+app.get("/", (c) => {
+  return c.json({
     success: true,
     message: "🤖 Bot Telegram aktif!",
-  })
-);
+  });
+});
 
 // Webhook endpoint
 app.post("/webhook", async (c) => {
